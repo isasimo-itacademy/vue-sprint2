@@ -1,35 +1,86 @@
+@import url("http://fonts.googleapis.com/css?family=Inter:300,400,500,600,700");
+
+
 // custom variables
 $primary: #5265E1;
 $secondary: #FA5959;
-/*$font-size-base: .8;
- $btn-font-size: .2;
-$nav-link-font-size: .7; */
 
-.btn {
-    padding: 0.7rem 3rem !important;
+body {
+    font-family: 'Inter', sans-serif !important;
+    color: #1D2441 !important;
 }
-.nav-tabs {
-    border: none;
+
+h1 {
+    font-size: 48px !important;
+    font-weight: 600 !important;
 }
+
+h2 {
+    font-size: 28px !important;
+    font-weight: 600 !important;
+}
+
+h3 {
+    font-size: 20px !important;
+}
+
+p {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+}
+
+button {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.btn-padding {
+    padding: 12px 24px !important;
+}
+
+// tabs
 
 .nav-tabs .nav-link {
-    color: #343a40;
+    color: #7E7E86;
+}
+
+.nav-tabs {
+    border-bottom: none !important;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    border-color: #FC595E !important;
+    border-bottom: 5px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-    border: none;
+    border: none !important;
+    color: #FC595E;
 }
 
-.nav-tabs .nav-link.active {
-    border-bottom: 4px solid red;
+.grey-border {
+    border-bottom: 1px solid #E0E0EA;
 }
 
-.shadow {
-    box-shadow: 0px 3px 9px -2px rgba(59,123,255,0.48) !important;
+// shadows
+
+.btn-shadow {
+    box-shadow: 0px 3px 7px rgba(82,102,223,0.30) !important;
+}
+
+.cards-shadow {
+    box-shadow: 0px 4px 11px rgba(82,102,223,0.15) !important;
+}
+
+.card-border {
+    border-radius: 1rem !important;
 }
 
 .accordion-item {
-    border-bottom: 1 px solid red !important;
+    border-bottom: 1 px solid red;
 }
 
 // import bootstrap
