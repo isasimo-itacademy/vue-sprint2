@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-    font-size: 28px !important;
+    font-size: 32px !important;
     font-weight: 600 !important;
 }
 
@@ -61,8 +61,12 @@ button {
     color: #FC595E;
 }
 
-.grey-border {
+.grey-border-b {
     border-bottom: 1px solid #E0E0EA;
+}
+
+.grey-border-t {
+    border-top: 1px solid #E0E0EA;
 }
 
 // shadows
@@ -79,8 +83,29 @@ button {
     border-radius: 1rem !important;
 }
 
+// accordion
+
 .accordion-item {
-    border-bottom: 1 px solid red;
+    border: none !important;
+}
+
+.accordion-button::after {
+    background-image: url(../img/icon-arrow.svg) !important;
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+} 
+
+.accordion-button:not(.collapsed) {
+    color: #212529 !important;
+    background-color: #fff !important;
+}
+
+.accordion-button:hover {
+    color: #FC595E !important;
+}
+
+.lettering {
+    letter-spacing: 0.20em;
 }
 
 // import bootstrap
