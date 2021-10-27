@@ -1,32 +1,28 @@
-@import url("http://fonts.googleapis.com/css?family=Inter:300,400,500,600,700");
-
-
 // custom variables
 $primary: #5265E1;
 $secondary: #FA5959;
+
+@import url("http://fonts.googleapis.com/css?family=Inter:300,400,500,600,700");
+
+.flexCenter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
 
 body {
     font-family: 'Inter', sans-serif !important;
     color: #1D2441 !important;
 }
 
-h1 {
-    font-size: 48px !important;
-    font-weight: 600 !important;
-}
-
-h2 {
-    font-size: 32px !important;
-    font-weight: 600 !important;
-}
-
 h3 {
     font-size: 20px !important;
-}
-
-p {
-    font-size: 16px !important;
-    font-weight: 400 !important;
 }
 
 .lettering {
@@ -38,28 +34,23 @@ button {
     font-weight: 500 !important;
 }
 
-.btn-padding {
-    padding: 12px 24px !important;
-}
-
 // images overlap 
 
 .img-move-wrapper {
-    border:1px solid red !important;
-    position:relative;
-    overflow:hidden;
+    position: relative;
+    overflow: hidden;
     margin:0 auto;
-    height: 500px;
+    height: 466px;
 }
 
 .img-move {
-    position:absolute;
+    position: absolute;
 }
 
 .img-move-1 {
-    right:0;
+    right: 0;
     bottom: 0;
-    width:55%;
+    width: 55%;
 }
 
 .img-move-2 {
@@ -77,6 +68,8 @@ button {
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #FC595E;
+    background-color: #fff;
     border-color: #FC595E !important;
     border-bottom: 5px solid;
     border-top: none;
@@ -85,7 +78,7 @@ button {
 }
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-    border: none !important;
+    border: #fff !important;
     color: #FC595E;
 }
 
@@ -131,6 +124,16 @@ button {
 .accordion-button:hover {
     color: #FC595E !important;
 }
+
+@media screen and (max-width: 576px) {
+    .img-move-wrapper {
+        height: 300px;
+    }
+    
+    .fullwidth {
+      width: 100% !important;
+    }
+  }
 
 // import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
