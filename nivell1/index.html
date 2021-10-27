@@ -10,33 +10,43 @@
 <body>
   <div class="container-flex">
         <!-- Header -->
-        <div class="row d-flex flex-wrap justify-content-center py-5 mt-5">
-          <header class="col-10 d-flex flex-wrap justify-content-center">
-              <a class="navbar-brand d-flex align-items-center mb-3 mb-md-0 me-md-auto" href="#">
+        <div class="row d-flex flex-wrap justify-content-center py-5">
+          <header class="col col-lg-9 d-flex flex-wrap justify-content-center flex-spacebetween">
+              <a class="navbar-brand d-flex align-items-center me-md-auto" href="#">
                   <img src="img/logo-bookmark.svg" alt="logo bookmark">
               </a>
+              
+              <!-- Collapse button -->
+              <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="img/icon-hamburger.svg">
+              </button>
 
-              <nav class="navbar navbar-expand-lg d-flex justify-content-end">
-                  <ul class="nav nav-pills text-uppercase">
-                      <li class="nav-item mx-3"><a href="#" class="nav-link text-dark">Features</a></li>
-                      <li class="nav-item mx-3"><a href="#" class="nav-link text-dark">Pricing</a></li>
-                      <li class="nav-item mx-3"><a href="#" class="nav-link text-dark">Contact</a></li>
-                      <li class="nav-item mx-3"><a href="#" class="nav-link text-light bg-secondary px-5">Login</a></li>
-                  </ul>
-              </nav>
+              <div id="navbarSupportedContent" class="d-none d-sm-block">
+                <nav class="navbar navbar-expand-lg d-flex justify-content-end">
+                    <ul class="nav nav-pills text-uppercase">
+                        <li class="nav-item mx-3"><a href="#" class="nav-link text-dark">Features</a></li>
+                        <li class="nav-item mx-3"><a href="#" class="nav-link text-dark">Pricing</a></li>
+                        <li class="nav-item mx-3"><a href="#" class="nav-link text-dark">Contact</a></li>
+                        <li class="nav-item mx-3"><a href="#" class="nav-link text-light bg-secondary px-5">Login</a></li>
+                    </ul>
+                </nav>
+              </div>
           </header>
         </div>
 
         <!-- Hero -->
         <div class="row d-flex flex-wrap justify-content-center">
-          <div class="col-10">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-              <div class="col-10 col-sm-8 col-lg-7">
-                <img src="img/illustration-hero.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          <div class="col">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5 ms-lg-5 ps-lg-5">
+              <div class="col-10 col-sm-8 col-lg-7 img-move-wrapper d-block">
+                <img src="img/pill.svg" class="img-move img-move-1 img-fluid" loading="lazy" role="presentation">
+                <img src="img/illustration-hero.svg" class="img-move img-move-2 img-fluid" alt="Bootstrap Themes" loading="lazy">
+<!--                 <img src="img/illustration-hero.svg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">-->              
               </div>
-              <div class="col-lg-5">
-                <h1 class="lh-1 mb-4">A Simple Bookmark Manager</h1>
-                <p class="lead mb-4 text-black-50">A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+              <div class="col-lg-5 px-5">
+                <h1 class="lh-2 mb-4">A Simple Bookmark Manager</h1>
+                <p class="mb-4 text-black-50">A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                   <button type="button" class="btn btn-primary btn-shadow btn-lg btn-padding px-4 me-md-2">Get in on Chrome</button>
                   <button type="button" class="btn btn-light btn-shadow btn-lg btn-padding px-4">Get in on Firefox</button>

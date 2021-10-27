@@ -23,6 +23,10 @@ p {
   font-weight: 400 !important;
 }
 
+.lettering {
+  letter-spacing: 0.20em;
+}
+
 button {
   font-size: 14px !important;
   font-weight: 500 !important;
@@ -30,6 +34,28 @@ button {
 
 .btn-padding {
   padding: 12px 24px !important;
+}
+
+.img-move-wrapper {
+  border: 1px solid red !important;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 500px;
+}
+
+.img-move {
+  position: absolute;
+}
+
+.img-move-1 {
+  right: 0;
+  bottom: 0;
+  width: 55%;
+}
+
+.img-move-2 {
+  left: 0;
 }
 
 .nav-tabs .nav-link {
@@ -92,10 +118,6 @@ button {
 
 .accordion-button:hover {
   color: #FC595E !important;
-}
-
-.lettering {
-  letter-spacing: 0.18em;
 }
 
 /*!
