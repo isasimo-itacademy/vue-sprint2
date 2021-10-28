@@ -118,6 +118,10 @@ body {
   color: #FC595E !important;
 }
 
+.invalid-tooltip {
+  background-color: red;
+}
+
 @media screen and (max-width: 576px) {
   .img-hero {
     height: 300px !important;
