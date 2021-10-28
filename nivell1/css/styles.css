@@ -1,18 +1,4 @@
 @import url("http://fonts.googleapis.com/css?family=Inter:300,400,500,600,700");
-.flexCenter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .nopadding {
   padding: 0 !important;
   margin: 0 !important;
@@ -23,15 +9,11 @@ body {
   color: #1D2441 !important;
 }
 
-h3, .h3 {
-  font-size: 20px !important;
-}
-
 .lettering {
   letter-spacing: 0.20em;
 }
 
-button {
+.button-size {
   font-size: 14px !important;
   font-weight: 500 !important;
 }
