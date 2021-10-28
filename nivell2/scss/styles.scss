@@ -1,0 +1,146 @@
+// custom variables
+$primary: #5265E1;
+$secondary: #FA5959;
+
+@import url("http://fonts.googleapis.com/css?family=Inter:300,400,500,600,700");
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+body {
+    font-family: 'Inter', sans-serif !important;
+    color: #1D2441 !important;
+}
+
+.lettering {
+    letter-spacing: 0.20em;
+}
+
+.button-size {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+// images overlap and rotate
+
+.img-overlap {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.img-hero {
+    height: 466px;
+}
+
+.img-tab {
+    height: 380px;
+}
+
+.img-move {
+    position: absolute;
+}
+
+.img-bottom {
+    bottom: 0;
+    width: 55%;
+}
+
+.img-right {
+    right: 0;
+}
+
+.img-left {
+    left: 0; 
+}
+
+.rotated {
+    transform: rotate(180deg);
+  }
+
+// tabs
+
+.nav-tabs .nav-link {
+    color: #7E7E86;
+}
+
+.nav-tabs {
+    border-bottom: none !important;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: #FC595E;
+    background-color: #fff;
+    border-color: #FC595E !important;
+    border-bottom: 5px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+    border: #fff !important;
+    color: #FC595E;
+}
+
+.grey-border-b {
+    border-bottom: 1px solid #E0E0EA;
+}
+
+.grey-border-t {
+    border-top: 1px solid #E0E0EA;
+}
+
+// shadows
+
+.btn-shadow {
+    box-shadow: 0px 3px 7px rgba(82,102,223,0.30) !important;
+}
+
+.cards-shadow {
+    box-shadow: 0px 4px 11px rgba(82,102,223,0.15) !important;
+}
+
+.card-border {
+    border-radius: 1rem !important;
+}
+
+// accordion
+
+.accordion-item {
+    border: none !important;
+}
+
+.accordion-button::after {
+    background-image: url(../img/icon-arrow.svg) !important;
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+} 
+
+.accordion-button:not(.collapsed) {
+    color: #212529 !important;
+    background-color: #fff !important;
+}
+
+.accordion-button:hover {
+    color: #FC595E !important;
+}
+
+@media screen and (max-width: 576px) {
+    .img-hero {
+        height: 300px !important;
+    }
+
+    .img-tab {
+        height: 250px !important;
+    }
+    
+    .fullwidth {
+      width: 100% !important;
+    }
+}
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
