@@ -8,7 +8,7 @@
     <title>Sprint 2</title>
 </head>
 <body>
-  <div class="container-flex nopadding">
+  <div class="container-flex">
         <!-- Header -->
         <div class="row d-flex flex-wrap justify-content-center py-4 nopadding">
           <header class="col col-lg-9 d-flex flex-wrap justify-content-between justify-content-lg-center">
@@ -36,19 +36,19 @@
         </div>
 
         <!-- Hero -->
-        <div class="row d-flex flex-wrap justify-content-center nopadding">
+        <div class="row d-flex flex-wrap justify-content-center nopadding py-5 ms-4 ms-lg-5 ps-lg-5">
           <div class="col">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5 ms-lg-5 ps-lg-5">
-              <div class="col-10 col-lg-7 img-move-wrapper d-block fullwidth">
-                <img src="img/pill.svg" class="img-move img-move-1 img-fluid" loading="lazy" role="presentation">
-                <img src="img/illustration-hero.svg" class="img-move img-move-2 img-fluid" alt="Bootstrap Themes" loading="lazy">           
+            <div class="row flex-lg-row-reverse align-items-center g-5 ps-lg-5">
+              <div class="col-10 col-lg-7 img-overlap img-hero">
+                <img src="img/pill.svg" class="img-move img-right img-bottom img-fluid" loading="lazy" role="presentation">
+                <img src="img/illustration-hero.svg" class="img-move img-left img-fluid" alt="Bootstrap Themes" loading="lazy">           
               </div>
-              <div class="col-lg-5 px-5 text-center text-lg-start">
+              <div class="col-lg-5 text-center text-lg-start">
                 <h1 class="fw-bolder fs-1 lh-2 mb-4">A Simple Bookmark Manager</h1>
-                <p class="mb-4 text-black-50">A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                <p class="mb-4 text-black-50 pe-lg-4">A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
                 <div class="d-block gap-3 d-flex justify-content-center justify-content-lg-start">
-                  <button type="button" class="btn btn-primary btn-shadow btn-lg py-3">Get in on Chrome</button>
-                  <button type="button" class="btn btn-light btn-shadow btn-lg py-3">Get in on Firefox</button>
+                  <button type="button" class="btn btn-primary btn-shadow btn-lg py-2">Get in on Chrome</button>
+                  <button type="button" class="btn btn-light btn-shadow btn-lg py-2">Get in on Firefox</button>
                 </div>
               </div>
             </div>
@@ -65,50 +65,66 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-9">
-            <ul class="nav nav-tabs d-flex flex-wrap justify-content-center px-5" id="myTab" role="tablist">
+          <div class="col-12 col-lg-9 ps-3">
+            <ul class="nav nav-tabs d-flex flex-wrap justify-content-center mx-4" id="myTab" role="tablist">
                   <li class="nav-item grey-border-b fullwidth d-flex flex-wrap justify-content-center" role="presentation">
-                    <button class="nav-link active p-4" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Simple Bookmarking</button>
+                    <button class="nav-link active p-4" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">Simple Bookmarking</button>
                   </li>
                   <li class="nav-item grey-border-b fullwidth d-flex flex-wrap justify-content-center" role="presentation">
-                    <button class="nav-link p-4" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Speedy Searching</button>
+                    <button class="nav-link p-4" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">Speedy Searching</button>
                   </li>
                   <li class="nav-item grey-border-b fullwidth d-flex flex-wrap justify-content-center" role="presentation">
-                    <button class="nav-link p-4" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Easy Sharing</button>
+                    <button class="nav-link p-4" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">Easy Sharing</button>
                   </li>
             </ul>
           </div>
-          <div class="col-12 col-lg-9">
-            <div class="row tab-content" id="myTabContent">
-              <div class="col p-5">
-                <!-- Content 1 -->
-                <div class="row tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                  <div class="col-7 px-5">
-                    <img src="img/illustration-features-tab-1.svg" class="d-block mx-lg-auto img-fluid" loading="lazy">
-                  </div>
-                  <div class="col-5 pt-4 ps-5">
-                    <h3 class="fw-bolder fs-2 lh-1 mb-4">Bookmark in one click</h3>
-                    <p class="mb-4 text-black-50">Organize your bookmarks however you like. Our simple drag and drop interface gives you complete control over how you manage your favourite sites.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                      <button type="button" class="btn btn-primary btn-shadow btn-lg btn-padding px-4 me-md-2">More Info</button>
+                <div class="col-12 pt-5 pe-lg-5 tab-content" id="myTabContent">
+                  <!-- Content 1 -->
+                  <div class="row d-flex tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                    <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center img-overlap img-tab">
+                      <img src="img/pill.svg" class="img-move img-left img-bottom img-fluid rotated" loading="lazy" role="presentation">
+                      <img src="img/illustration-features-tab-1.svg" class="img-move w-75" alt="Browser Bookmark" loading="lazy">           
+                    </div>
+                    <div class="col-12 col-lg-6 pt-4 px-lg-4 text-center text-lg-start">
+                      <h3 class="fw-bolder fs-2 lh-1 mb-4">Bookmark in one click</h3>
+                      <p class="mb-4 text-black-50 pe-lg-4">Organize your bookmarks however you like. Our simple drag and drop interface gives you complete control over how you manage your favourite sites.</p>
+                      <button type="button" class="btn btn-primary btn-lg btn-shadow py-2">More Info</button>
                     </div>
                   </div>
-                  
-                </div>
+                
+                  <!-- Content 2 -->            
+                  <div class="row d-flex tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                    <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center img-overlap img-tab">
+                      <img src="img/pill.svg" class="img-move img-left img-bottom img-fluid rotated" loading="lazy" role="presentation">
+                      <img src="img/illustration-features-tab-2.svg" class="img-move w-75" alt="Browser Bookmark" loading="lazy">           
+                    </div>
+                    <div class="col-12 col-lg-6 pt-4 px-lg-4 text-center text-lg-start">
+                      <h3 class="fw-bolder fs-2 lh-1 mb-4">Intelligent Searching</h3>
+                      <p class="mb-4 text-black-50 pe-lg-4">Organize your bookmarks however you like. Our simple drag and drop interface gives you complete control over how you manage your favourite sites.</p>
+                      <button type="button" class="btn btn-primary btn-lg btn-shadow py-2">More Info</button>
+                    </div>
+                  </div>
 
-                <!-- Content 2 -->            
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">02 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, magni?</div>
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">03 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam iusto animi et quia nihil at voluptatem mollitia dolorem ad quas harum dolorum architecto qui voluptas praesentium reprehenderit impedit, dolore facere?</div>
-              </div>
-            </div>
-          </div>
+                  <!-- Content 3 -->            
+                  <div class="row d-flex tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                    <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center img-overlap img-tab">
+                      <img src="img/pill.svg" class="img-move img-left img-bottom img-fluid rotated" loading="lazy" role="presentation">
+                      <img src="img/illustration-features-tab-3.svg" class="img-move w-75" alt="Browser Bookmark" loading="lazy">           
+                    </div>
+                    <div class="col-12 col-lg-6 pt-4 px-lg-4 text-center text-lg-start">
+                      <h3 class="fw-bolder fs-2 lh-1 mb-4">Intelligent Searching</h3>
+                      <p class="mb-4 text-black-50 pe-lg-4">Organize your bookmarks however you like. Our simple drag and drop interface gives you complete control over how you manage your favourite sites.</p>
+                      <button type="button" class="btn btn-primary btn-lg btn-shadow py-2">More Info</button>
+                    </div>
+                  </div>
+                </div>
         </div> 
 
         <!-- Download -->
         <div class="row d-flex flex-wrap justify-content-center py-5">
-          <div class="col-9">
+          <div class="col-12 col-lg-9">
             <div class="row row-cols-1 d-flex flex-wrap justify-content-center pb-5">
-              <div class="col-6 px-4 py-4 text-center">
+              <div class="col-lg-6 col-10 px-4 py-4 text-center">
                 <h2 class="fw-bolder pb-2">Download the extension</h2>
                 <p class="mb-4 text-black-50">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
               </div>
@@ -168,13 +184,13 @@
 
         <!-- FAQS -->        
         <div class="row d-flex flex-wrap justify-content-center py-5">
-          <div class="col-4">
+          <div class="col-12 col-lg-4">
             <div class="row row-cols-1 d-flex flex-wrap justify-content-center pb-5">
-              <div class="col px-4 py-4 text-center">
+              <div class="col-lg-12 col-10 px-4 py-4 text-center">
                 <h2 class="fw-bolder pb-2">Frequently Asked Questions</h2>
                 <p class="mb-4 text-black-50">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
               </div>
-              <div class="col accordion mb-4" id="accordionExample">
+              <div class="col-lg-12 col-10 accordion mb-4" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header grey-border-t" id="headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -225,7 +241,7 @@
                 </div>
              </div>
               <div class="col px-4 py-4 text-center">
-                <button type="button" class="btn btn-primary btn-shadow btn-padding">More Info</button>
+                <button type="button" class="btn btn-primary btn-lg btn-shadow py-2">More Info</button>
               </div>
             </div>
           </div>

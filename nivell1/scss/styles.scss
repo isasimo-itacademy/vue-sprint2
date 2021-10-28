@@ -34,28 +34,42 @@ button {
     font-weight: 500 !important;
 }
 
-// images overlap 
+// images overlap and rotate
 
-.img-move-wrapper {
+.img-overlap {
     position: relative;
     overflow: hidden;
-    margin:0 auto;
+    margin: 0 auto;
+}
+
+.img-hero {
     height: 466px;
+}
+
+.img-tab {
+    height: 380px;
 }
 
 .img-move {
     position: absolute;
 }
 
-.img-move-1 {
-    right: 0;
+.img-bottom {
     bottom: 0;
     width: 55%;
 }
 
-.img-move-2 {
+.img-right {
+    right: 0;
+}
+
+.img-left {
     left: 0; 
 }
+
+.rotated {
+    transform: rotate(180deg);
+  }
 
 // tabs
 
@@ -126,14 +140,18 @@ button {
 }
 
 @media screen and (max-width: 576px) {
-    .img-move-wrapper {
-        height: 300px;
+    .img-hero {
+        height: 300px !important;
+    }
+
+    .img-tab {
+        height: 250px !important;
     }
     
     .fullwidth {
       width: 100% !important;
     }
-  }
+}
 
 // import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
