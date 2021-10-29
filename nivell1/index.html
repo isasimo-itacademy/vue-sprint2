@@ -56,7 +56,7 @@
         </div>
 
         <!-- Features -->
-        <div class="row justify-content-center py-5">
+        <section class="row justify-content-center py-5">
           <div class="col-12 col-lg-9">
             <div class="row row-cols-1 justify-content-center">
               <div class="col col-lg-7 p-5 text-center">
@@ -67,31 +67,65 @@
           </div>
 
           <ul class="nav nav-tabs justify-content-center mx-4" id="myTab" role="tablist">
-              <li class="nav-item grey-border-b fullwidth d-flex flex-wrap justify-content-center" role="presentation">
-                <button class="nav-link active p-4" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">Simple Bookmarking</button>
-              </li>
-              <li class="nav-item grey-border-b fullwidth d-flex flex-wrap justify-content-center" role="presentation">
-                <button class="nav-link p-4" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">Speedy Searching</button>
-              </li>
-              <li class="nav-item grey-border-b fullwidth d-flex flex-wrap justify-content-center" role="presentation">
-                <button class="nav-link p-4" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">Easy Sharing</button>
-              </li>
+            <li class="nav-item grey-border-b fullwidth d-flex flex-wrap justify-content-center" role="presentation">
+              <button class="nav-link active p-4" id="info1-tab" data-bs-toggle="tab" data-bs-target="#info1" type="button" role="tab" aria-controls="info1" aria-selected="true">Simple Bookmarking</button>
+            </li>
+            <li class="nav-item grey-border-b fullwidth d-flex flex-wrap justify-content-center" role="presentation">
+              <button class="nav-link p-4" id="info2-tab" data-bs-toggle="tab" data-bs-target="#info2" type="button" role="tab" aria-controls="info2" aria-selected="false">Speedy Searching</button>
+            </li>
+            <li class="nav-item grey-border-b fullwidth d-flex flex-wrap justify-content-center" role="presentation">
+              <button class="nav-link p-4" id="info3-tab" data-bs-toggle="tab" data-bs-target="#info3" type="button" role="tab" aria-controls="info3" aria-selected="false">Easy Sharing</button>
+            </li>
           </ul>
-          <div class="col-12 pt-5 pe-lg-5 tab-content" id="myTabContent">
-              <!-- Content 1 -->
-              <div class="row d-flex flex-wrap justify-content-center tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
-                <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center img-overlap img-tab">
+
+          <div class="tab-content pt-5 pb-2" id="myTabContent">   
+            
+            <!-- CONTENT 1  -->            
+            <div class="tab-pane fade show active" id="info1" role="tabpanel" aria-labelledby="info1-tab">
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 justify-content-center img-overlap img-tab">
                   <img src="img/pill.svg" class="img-move img-left img-bottom img-fluid rotated" loading="lazy" role="presentation">
-                  <img src="img/illustration-features-tab-1.svg" class="img-move w-75" alt="Browser Bookmark" loading="lazy">           
+                  <img src="img/illustration-features-tab-1.svg" class="img-move img-right w-75 pe-lg-5" alt="Browser Bookmark" loading="lazy">           
                 </div>
-                <div class="col-10 col-lg-6 pt-4 px-lg-4 text-center text-lg-start">
+                <div class="col-10 col-lg-6 pt-4 px-lg-5 text-center text-lg-start">
                   <h3 class="fw-bolder fs-2 lh-1 mb-4">Bookmark in one click</h3>
-                  <p class="mb-4 text-black-50 pe-lg-4">Organize your bookmarks however you like. Our simple drag and drop interface gives you complete control over how you manage your favourite sites.</p>
+                  <p class="mb-4 text-black-50 pe-lg-5">Organize your bookmarks however you like. Our simple drag and drop interface gives you complete control over how you manage your favourite sites.</p>
                   <button type="button" class="btn btn-primary button-size btn-lg btn-shadow py-2">More Info</button>
                 </div>
               </div>
+            </div>
+            
+            <!-- CONTENT 2  -->            
+            <div class="tab-pane fade" id="info2" role="tabpanel" aria-labelledby="info2-tab">
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 justify-content-center img-overlap img-tab">
+                  <img src="img/pill.svg" class="img-move img-left img-bottom img-fluid rotated" loading="lazy" role="presentation">
+                  <img src="img/illustration-features-tab-2.svg" class="img-move img-right w-75 pe-lg-5" alt="Browser Bookmark" loading="lazy">           
+                </div>
+                <div class="col-10 col-lg-6 pt-4 px-lg-5 text-center text-lg-start">
+                  <h3 class="fw-bolder fs-2 lh-1 mb-4">Intelligent Searching</h3>
+                  <p class="mb-4 text-black-50 pe-lg-5">Our powerful search feature will help you find saved sites in no time at all. No need to trawl trhough all of your bookmarks.</p>
+                  <button type="button" class="btn btn-primary button-size btn-lg btn-shadow py-2">More Info</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- CONTENT 3  -->            
+            <div class="tab-pane fade" id="info3" role="tabpanel" aria-labelledby="info3-tab">
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-6 justify-content-center img-overlap img-tab">
+                  <img src="img/pill.svg" class="img-move img-left img-bottom img-fluid rotated" loading="lazy" role="presentation">
+                  <img src="img/illustration-features-tab-3.svg" class="img-move img-right w-75 pe-lg-5" alt="Browser Bookmark" loading="lazy">           
+                </div>
+                <div class="col-10 col-lg-6 pt-4 px-lg-5 text-center text-lg-start">
+                  <h3 class="fw-bolder fs-2 lh-1 mb-4">Share your bookmarks</h3>
+                  <p class="mb-4 text-black-50 pe-lg-5">Easily share your bookmarks and collections with others. Create a shareable link that you can sent at the click of a button.</p>
+                  <button type="button" class="btn btn-primary button-size btn-lg btn-shadow py-2">More Info</button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
 
         <!-- Download -->
         <div class="row justify-content-center py-5">
