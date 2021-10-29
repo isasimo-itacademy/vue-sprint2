@@ -255,14 +255,13 @@
         </section>
         
         <!-- BANNER -->        
-        <section class="row bg-primary justify-content-center p-5">
+        <section class="row bg-primary justify-content-center p-lg-5 py-5 px-3">
           <div class="col-12 col-lg-5 text-center">
             <p class="text-uppercase lettering text-white">35,000+ already joined</p>
             <h2 class="fs-3 text-white py-3">Stay up-to-date with what we're doing</h2>
-            
-            <form class="d-grid gap-2 pt-2 needs-validation" novalidate>
-              <div class="position-relative">
-                <div class="has-validation">
+            <form class="d-grid d-lg-flex gap-2 pt-2 needs-validation justify-content-center" novalidate>
+              <div class="position-relative flex-fill">
+                <div class="has-validation d-flex flex-column">
                   <input type="email" class="form-control" placeholder="Enter your email address" aria-label="User Email" id="emailAddress" required>
                   <div class="invalid-tooltip">
                     Whoops, make sure it's an email
@@ -271,15 +270,30 @@
               </div>
               <button class="btn btn-secondary button-size btn-lg btn-shadow py-2 text-white" type="submit">Contact Us</button>
             </form>
-          </div>
+          </div>            
         </section>
 
         <!-- FOOTER -->        
-        <section class="row bg-dark justify-content-center p-5">
-          <div class="col-12 col-lg-5 text-center">
-            <p class="text-uppercase lettering text-white">35,000+ already joined</p>
+        <footer class="row bg-dark justify-content-center py-5 py-lg-3">
+          <div class="col-10 col-lg-9">
+            <div class="row gy-5">
+              <div class="col-12 col-lg-auto d-flex justify-content-center">
+                <img src="./img/logo-bookmark-white.svg" alt="logo bookmark">
+              </div>
+              <div class="col-12 col-lg-7 d-flex justify-content-center justify-content-lg-start">
+                <ul class="nav nav-pills flex-column flex-lg-row text-uppercase">
+                  <li class="nav-item text-center mx-3 mb-4 mb-lg-1"><a href="#" class="nav-link text-white nopadding">Features</a></li>
+                  <li class="nav-item text-center mx-3 mb-4 mb-lg-1"><a href="#" class="nav-link text-white nopadding">Pricing</a></li>
+                  <li class="nav-item text-center mx-3 mb-4 mb-lg-1"><a href="#" class="nav-link text-white nopadding">Contact</a></li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-2 justify-content-center d-flex gap-4">
+                <img src="./img/icon-facebook.svg" alt="Logo Facebook">
+                <img src="./img/icon-twitter.svg" alt="Logo Twitter">
+              </div>
+            </div>
           </div>
-        </section>
+        </footer>
   </div>
 
     <!-- Bootstrap JavaScript -->
