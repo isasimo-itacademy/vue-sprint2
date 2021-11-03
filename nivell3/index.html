@@ -8,6 +8,20 @@
     <title>Sprint 2</title>
 </head>
 <body>
+
+  <!-- Mobile Nav -->
+<!--     <div class="">
+      <nav class="collapse navbar navbar-collapse bg-dark justify-content-center" id="navbarToggleExternalContent">
+        <ul class="nav flex-column text-uppercase">
+            <li class="nav-item"><a href="#" class="nav-link text-white text-center colortext">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white text-center colortext">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link text-white text-center colortext">Contact</a></li>
+            <button type="button" class="btn btn-outline-light button-size text-white text-center btn-lg py-2 px-4" href="#">Login</button>
+        </ul>
+      </nav>
+    </div>
+     -->
+
   <div class="container-fluid">
         <!-- Header -->
         <div class="row justify-content-center py-4 nopadding">
@@ -17,11 +31,20 @@
               </a>
               
               <!-- Collapse button -->
-              <button class="navbar-toggler d-block d-sm-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler d-block d-sm-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="img/icon-hamburger.svg">
               </button>
 
+              <nav class="collapse navbar bg-dark justify-content-center col-12 py-5 mt-3" id="navbarToggleExternalContent">
+                <ul class="nav flex-column text-uppercase">
+                    <li class="nav-item"><a href="#" class="nav-link text-white text-center colortext">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white text-center colortext">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white text-center colortext">Contact</a></li>
+                    <button type="button" class="btn btn-outline-light button-size text-white text-center btn-lg py-2 px-4" href="#">Login</button>
+                </ul>
+              </nav>
+
+              <!-- Desktop Nav -->
               <div id="navbarSupportedContent" class="d-none d-sm-block">
                 <nav class="navbar navbar-expand-lg d-flex justify-content-end">
                     <ul class="nav nav-pills text-uppercase">
@@ -297,9 +320,9 @@
   </div>
 
     <!-- Bootstrap JavaScript -->
-    <!-- <script src="./node_modules/bootstrap/js/dist/*.js"></script>  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="scripts/validator.js"></script>
+    <script src="scripts/toggler-overlay.js"></script>
 
 </body>
 </html>
