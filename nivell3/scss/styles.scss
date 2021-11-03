@@ -94,27 +94,28 @@ a.colortext:hover {
 
 // tabs
 
-.nav-tabs .nav-link {
-    color: #7E7E86;
-}
-
 .nav-tabs {
     border-bottom: none !important;
 }
 
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-    color: $secondary;
-    background-color: white;
-    border-color: $secondary !important;
-    border-bottom: 5px solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+.nav-tabs .nav-link {
+    color: black;
 }
 
-.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-    border: white !important;
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
     color: $secondary;
+    border: none;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: black;
+    border-color:$secondary !important;
+    border-bottom: 5px solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
 }
 
 .grey-border-b {
